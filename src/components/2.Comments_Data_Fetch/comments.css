@@ -1,0 +1,40 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+.comments {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+.comment {
+    background: #00b894;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 12px;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+
+}
+.comment h3 {
+    text-align: center;
+    background: #16a085;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    line-height: 80px;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 24px;
+}
+
+@media screen and (min-width: 768px) {
+    .comments {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width: 992px) {
+    .comments {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
